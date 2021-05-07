@@ -1,0 +1,28 @@
+***************************************************************************************************************************************
+*   10/500:     10 trades. 8/0/2 Wins/Draws/Losses. Avg profit  64.45%. Median profit  31.29%. Total profit  23.62184823 BNB ( 262.46Σ%). Avg duration 8 days, 18:36:00 min. Objective: -5.52937
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "buy-indicator-0": LINEARREG_INTERCEPT-12,
+        "buy-cross-0": CDLLONGLINE-12,
+        "buy-real-0": 0.20897,
+        "buy-oper-0": <R,
+        "buy-indicator-1": CDLENGULFING-12,
+        "buy-cross-1": CDLHANGINGMAN-12,
+        "buy-real-1": 0.41002,
+        "buy-oper-1": <,
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "sell-indicator-0": KAMA-15,
+        "sell-cross-0": HT_TRENDMODE-12,
+        "sell-real-0": 0.20578,
+        "sell-oper-0": >R,
+        "sell-indicator-1": CDLHAMMER-15,
+        "sell-cross-1": CDLLONGLINE-15,
+        "sell-real-1": 0.4041,
+        "sell-oper-1": CA,
+    }
+***************************************************************************************************************************************
