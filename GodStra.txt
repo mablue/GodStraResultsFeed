@@ -1,4 +1,48 @@
 ***************************************************************************************************************************************
+*    1/100:     65 trades. 45/20/0 Wins/Draws/Losses. Avg profit  14.01%. Median profit  12.69%. Total profit  0.09117838 BTC (  91.18Σ%). Avg duration 2 days, 14:54:00 min. Objective: -26.90235
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "buy-indicator-0": TRIMA-7,
+        "buy-cross-0": MACDEXT0-14,
+        "buy-real-0": 0.23546,
+        "buy-oper-0": <,
+        "buy-indicator-1": SAR-7,
+        "buy-cross-1": MACD2-7,
+        "buy-real-1": 0.20562,
+        "buy-oper-1": <R,
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "sell-indicator-0": TRANGE-7,
+        "sell-cross-0": CDLSTICKSANDWICH-14,
+        "sell-real-0": 0.21343,
+        "sell-oper-0": =,
+        "sell-indicator-1": HT_SINE0-14,
+        "sell-cross-1": CDLABANDONEDBABY-14,
+        "sell-real-1": 1.04348,
+        "sell-oper-1": =,
+    }
+
+    # ROI table:
+    minimal_roi = {
+        "0": 0.291,
+        "1726": 0.127,
+        "3476": 0.051,
+        "5018": 0
+    }
+
+    # Stoploss:
+    stoploss = -0.33
+
+    # Trailing stop:
+    trailing_stop = True
+    trailing_stop_positive = 0.329
+    trailing_stop_positive_offset = 0.333
+    trailing_only_offset_is_reached = False
+***************************************************************************************************************************************
 *   10/500:     10 trades. 8/0/2 Wins/Draws/Losses. Avg profit  64.45%. Median profit  31.29%. Total profit  23.62184823 BNB ( 262.46Σ%). Avg duration 8 days, 18:36:00 min. Objective: -5.52937
 
 
