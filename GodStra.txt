@@ -70,3 +70,47 @@
     trailing_stop_positive_offset = 0.061
     trailing_only_offset_is_reached = False
     
+***************************************************************************************************************************************
+*   14/100:    131 trades. 93/12/26 Wins/Draws/Losses. Avg profit   7.69%. Median profit  11.69%. Total profit  0.10081879 BTC ( 100.82Σ%). Avg duration 2 days, 13:17:00 min. Objective: -24.22527
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "buy-indicator-0": MINMAXINDEX1-14,
+        "buy-cross-0": CDLINVERTEDHAMMER-7,
+        "buy-real-0": 1.05907,
+        "buy-oper-0": >,
+        "buy-indicator-1": CDLMORNINGSTAR-14,
+        "buy-cross-1": CDLTHRUSTING-14,
+        "buy-real-1": 0.83797,
+        "buy-oper-1": D,
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "sell-indicator-0": SQRT-7,
+        "sell-cross-0": CDLUNIQUE3RIVER-14,
+        "sell-real-0": 0.18688,
+        "sell-oper-0": CB,
+        "sell-indicator-1": STOCHF0-7,
+        "sell-cross-1": MINMAX1-7,
+        "sell-real-1": 0.50701,
+        "sell-oper-1": =R,
+    }
+
+    # ROI table:
+    minimal_roi = {
+        "0": 0.33,
+        "1265": 0.167,
+        "3226": 0.117,
+        "8827": 0
+    }
+
+    # Stoploss:
+    stoploss = -0.301
+
+    # Trailing stop:
+    trailing_stop = True
+    trailing_stop_positive = 0.24
+    trailing_stop_positive_offset = 0.247
+    trailing_only_offset_is_reached = False
