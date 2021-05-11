@@ -1,4 +1,32 @@
 ***************************************************************************************************************************************
+*    2/100:      9 trades. 9/0/0 Wins/Draws/Losses. Avg profit  491.93%. Median profit  493.86%. Total profit  0.44318230 BTC ( 443.18Σ%). Avg duration 41 days, 8:00:00 min. Objective: -515.36271
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "buy-indicator-0": BOP-7,
+        "buy-cross-0": CEIL-14,
+        "buy-real-0": -0.0594,
+        "buy-oper-0": D,
+        "buy-indicator-1": MINUS_DI-7,
+        "buy-cross-1": CORREL-14,
+        "buy-real-1": 1.03782,
+        "buy-oper-1": D,
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "sell-indicator-0": MAXINDEX-14,
+        "sell-cross-0": DX-14,
+        "sell-real-0": 1.00769,
+        "sell-oper-0": <,
+        "sell-indicator-1": CDLMARUBOZU-14,
+        "sell-cross-1": COS-14,
+        "sell-real-1": 0.11772,
+        "sell-oper-1": CA,
+    }
+***************************************************************************************************************************************
+
 *    1/100:     65 trades. 45/20/0 Wins/Draws/Losses. Avg profit  14.01%. Median profit  12.69%. Total profit  0.09117838 BTC (  91.18Σ%). Avg duration 2 days, 14:54:00 min. Objective: -26.90235
 
 
