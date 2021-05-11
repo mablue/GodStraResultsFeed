@@ -26,3 +26,47 @@
         "sell-oper-1": CA,
     }
 ***************************************************************************************************************************************
+18/100:     32 trades. 26/3/3 Wins/Draws/Losses. Avg profit   6.53%. Median profit   4.30%. Total profit  0.02092368 BTC (  20.92Σ%). Avg duration 1 day, 1:45:00 min. Objective: -5.78961
+
+
+    # Buy hyperspace params:
+    buy_params = {
+        "buy-indicator-0": PPO-7,
+        "buy-cross-0": MIDPOINT-14,
+        "buy-real-0": 0.91582,
+        "buy-oper-0": D,
+        "buy-indicator-1": CCI-14,
+        "buy-cross-1": LINEARREG-14,
+        "buy-real-1": 0.10451,
+        "buy-oper-1": >R,
+    }
+
+    # Sell hyperspace params:
+    sell_params = {
+        "sell-indicator-0": BETA-7,
+        "sell-cross-0": CDLSEPARATINGLINES-7,
+        "sell-real-0": 0.75838,
+        "sell-oper-0": CB,
+        "sell-indicator-1": EMA-7,
+        "sell-cross-1": CDLADVANCEBLOCK-14,
+        "sell-real-1": 0.64724,
+        "sell-oper-1": D,
+    }
+
+    # ROI table:
+    minimal_roi = {
+        "0": 0.771,
+        "1123": 0.243,
+        "2967": 0.043,
+        "6013": 0
+    }
+
+    # Stoploss:
+    stoploss = -0.316
+
+    # Trailing stop:
+    trailing_stop = True
+    trailing_stop_positive = 0.057
+    trailing_stop_positive_offset = 0.061
+    trailing_only_offset_is_reached = False
+    
